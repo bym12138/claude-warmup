@@ -2,7 +2,9 @@ name: Claude Code Warmup
 
 on:
   schedule:
-    - cron: '0 9 * * 1-5'
+    - cron: '0 22 * * *'   # 上海每天早上 6:00（UTC 前一天 22:00）
+    - cron: '0 4 * * *'    # 上海每天中午 12:00（UTC 4:00）
+    - cron: '0 9 * * *'    # 上海每天下午 17:00（UTC 9:00）
   workflow_dispatch: {}
 
 concurrency:
