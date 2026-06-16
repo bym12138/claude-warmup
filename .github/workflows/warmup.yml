@@ -3,7 +3,7 @@ name: Claude Code Warmup
 on:
   schedule:
     - cron: '0 21 * * *'    # 早上 ~6:00
-    - cron: '0 8 * * *'     # 下午 ~16:00~17:00
+    # - cron: '0 8 * * *'     # 下午 ~16:00~17:00
   workflow_dispatch: {}
 
 concurrency:
